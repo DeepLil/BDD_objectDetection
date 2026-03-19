@@ -6,3 +6,5 @@ Data Analysis:
 3. while verifying the number of lables vs corresponding images, there are differnces, so the labels without images or images without lables are removed. 
 4. Observe the distribution of classes.
    It revealed long tail distribution as some classes are almost negligible compared to other classes. Also, observing the ratio of occuled/non occluded and truncated/non truncated ones to understand the percentage of hard examples in the data. Understanding the spatial distribution of each class using heatmap to identify anamolies like traffic light cannot be at bottom and car cannot be top. Plotting the aspect ratio of classes to identify anamoly in labelling. For example, person height should always be greater than width and vice versa for car. Though there may be a small percentage of outliers, we have to be sure the percentage is extremely small or negligible.
+<img width="1000" height="600" alt="bike_heatmap" src="https://github.com/user-attachments/assets/296f6c98-bc48-4361-9afa-23b5dd74c587" />
+
