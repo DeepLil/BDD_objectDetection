@@ -7,6 +7,13 @@ Data Analysis:
 4. Observe the distribution of classes.
    It revealed long tail distribution as some classes are almost negligible compared to other classes. Also, observing the ratio of occuled/non occluded and truncated/non truncated ones to understand the percentage of hard examples in the data. Understanding the spatial distribution of each class using heatmap to identify anamolies like traffic light cannot be at bottom and car cannot be top. Plotting the aspect ratio of classes to identify anamoly in labelling. For example, person height should always be greater than width and vice versa for car. Though there may be a small percentage of outliers, we have to be sure the percentage is extremely small or negligible.
 
+# No of instances per class
+
+Training data:
+<img width="1200" height="600" alt="bdd_distribution" src="https://github.com/user-attachments/assets/447fdfcf-953a-426f-beec-72a23f6322bf" />
+Validation data:
+<img width="1200" height="600" alt="bdd_distribution_val" src="https://github.com/user-attachments/assets/9ca4d65c-90fe-497a-a4a6-d3cfd2dc3f2f" />
+
 # Spatial Distribution check
 
 This spatial distribution is a health check to see the physical placement of the objects on the image. As the dataset is from a dashcam, it is natural to assume the road is in the middle center and all the vehicles are supposed to be on the road with a little variance. The traffic sign and traffic light are naturally assumed to be on the top left or right. This sanity check provides us with the placement and maybe the merit of the annotation too. 
