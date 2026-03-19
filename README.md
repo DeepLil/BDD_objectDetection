@@ -44,6 +44,32 @@ Repeat with every class.
 
 <img width="1000" height="600" alt="truck_heatmap" src="https://github.com/user-attachments/assets/c5a32306-28e9-47e5-be5a-baa339fd9a66" />
 
+# Dimension check
+
+<img width="800" height="800" alt="bike_scatter" src="https://github.com/user-attachments/assets/44e92f94-8e18-4d1a-af5e-9eb6822e52a4" />
+
+<img width="800" height="800" alt="bus_scatter" src="https://github.com/user-attachments/assets/56ee21a5-fe72-462c-b395-c14bd4d32081" />
+
+<img width="800" height="800" alt="car_scatter" src="https://github.com/user-attachments/assets/1217e521-a8eb-4012-b5e7-da13c765b4d4" />
+
+<img width="800" height="800" alt="motor_scatter" src="https://github.com/user-attachments/assets/c06b13b4-6114-4a6e-9f24-102dcd87c874" />
+
+<img width="800" height="800" alt="person_scatter" src="https://github.com/user-attachments/assets/1c2dc6bf-59a7-4a45-b59f-24a5769ad239" />
+
+<img width="800" height="800" alt="rider_scatter" src="https://github.com/user-attachments/assets/3c6af7fa-1be8-41c7-a6e7-394666ee3b32" />
+
+<img width="800" height="800" alt="traffic light_scatter" src="https://github.com/user-attachments/assets/3d330b1e-1040-4178-b8d8-bd5ad75ff89e" />
+
+<img width="800" height="800" alt="traffic sign_scatter" src="https://github.com/user-attachments/assets/21d28714-a17b-48f8-a3a3-26925c3da762" />
+
+<img width="800" height="800" alt="train_scatter" src="https://github.com/user-attachments/assets/3f0e3378-a601-4cb0-808d-8327716dc7e9" />
+
+<img width="800" height="800" alt="truck_scatter" src="https://github.com/user-attachments/assets/659a3241-ad94-4cbd-925d-2ef347545f9e" />
+
+
+
+
+
 
 
 
