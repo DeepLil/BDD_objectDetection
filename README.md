@@ -6,5 +6,39 @@ Data Analysis:
 3. while verifying the number of lables vs corresponding images, there are differnces, so the labels without images or images without lables are removed. 
 4. Observe the distribution of classes.
    It revealed long tail distribution as some classes are almost negligible compared to other classes. Also, observing the ratio of occuled/non occluded and truncated/non truncated ones to understand the percentage of hard examples in the data. Understanding the spatial distribution of each class using heatmap to identify anamolies like traffic light cannot be at bottom and car cannot be top. Plotting the aspect ratio of classes to identify anamoly in labelling. For example, person height should always be greater than width and vice versa for car. Though there may be a small percentage of outliers, we have to be sure the percentage is extremely small or negligible.
+
+# Spatial Distribution check
+
+This spatial distribution is a health check to see the physical placement of the objects on the image. As the dataset is from a dashcam, it is natural to assume the road is in the middle center and all the vehicles are supposed to be on the road with a little variance. The traffic sign and traffic light are naturally assumed to be on the top left or right. This sanity check provides us with the placement and maybe the merit of the annotation too. 
+
+Bike: Bicycle. Can be a parked one or one with a rider. In any way supposed to be at centre line with variance. As on road and on either side of the road. 
 <img width="1000" height="600" alt="bike_heatmap" src="https://github.com/user-attachments/assets/296f6c98-bc48-4361-9afa-23b5dd74c587" />
+
+This seems fine. 
+
+Repeat with every class. 
+
+
+<img width="1000" height="600" alt="bus_heatmap" src="https://github.com/user-attachments/assets/166b7eb7-16f2-4851-ac03-f67e1f8b079c" />
+
+<img width="1000" height="600" alt="car_heatmap" src="https://github.com/user-attachments/assets/71575156-d816-454c-90e2-866f8441be23" />
+
+<img width="1000" height="600" alt="motor_heatmap" src="https://github.com/user-attachments/assets/04b03512-fa7b-4ce9-87ea-9f6884a2b4c8" />
+
+<img width="1000" height="600" alt="person_heatmap" src="https://github.com/user-attachments/assets/e6282ce2-b92a-4361-a336-58da121b5879" />
+
+<img width="1000" height="600" alt="rider_heatmap" src="https://github.com/user-attachments/assets/0c3d6a18-98ce-4226-b0bc-6ac2927911fd" />
+
+<img width="1000" height="600" alt="traffic light_heatmap" src="https://github.com/user-attachments/assets/bf71c3e1-c206-4378-942d-3e2f979db40d" />
+
+<img width="1000" height="600" alt="traffic sign_heatmap" src="https://github.com/user-attachments/assets/57bc9fba-e251-44d3-af29-b3d431026b92" />
+
+<img width="1000" height="600" alt="train_heatmap" src="https://github.com/user-attachments/assets/7403d9f7-b597-40ee-8327-5cc35d3226e0" />
+
+<img width="1000" height="600" alt="truck_heatmap" src="https://github.com/user-attachments/assets/c5a32306-28e9-47e5-be5a-baa339fd9a66" />
+
+
+
+
+
 
