@@ -69,6 +69,19 @@ Repeat with every class.
 
 
 
+# The first pass
+
+Fine tuning the model for the BDD dataset classes just for an epoch to see what would be the performance. It is likely we get a very low maP because of the heavy penalization due to classes like train, rider , motor which is evident from the skewed dataset, we will check other things which we might have missed and justify the ones which are expected but not taken care of. 
+
+<img width="3000" height="2250" alt="confusion_matrix_normalized" src="https://github.com/user-attachments/assets/2a63008a-ae3f-4d8c-9586-def9034e3bd4" />
+
+
+Though, the instances are huge in case of car class, lot of cars went in background and lot of background is hallucinated as cars. 
+
+Going back to dimension analysis, we have lot of cars in the datset which are extremely small. We can confirm this visually by the validation result. 
+
+
+
 
 
 
