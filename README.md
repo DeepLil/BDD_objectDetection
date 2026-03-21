@@ -87,8 +87,8 @@ The result after training 10 epochs
 
 Comparing performance in day and night to check whether mAP can be improved by augmenting the failing half
 
-<img width="3000" height="2250" alt="confusion_matrix_normalized" src="https://github.com/user-attachments/assets/60ab1817-5cc5-4135-964c-456073273c8b" />
-  <img width="3000" height="2250" alt="confusion_matrix_normalized" src="https://github.com/user-attachments/assets/0852cf03-b887-4fe6-8594-8b1db1d03394" />
+<img width="1536" height="754" alt="Figure_15" src="https://github.com/user-attachments/assets/220b9ff0-ebda-46e3-8497-38dc38527b81" />
+
 
 
 
