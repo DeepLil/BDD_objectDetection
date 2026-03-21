@@ -90,6 +90,14 @@ Comparing performance in day and night to check whether mAP can be improved by a
 <img width="1536" height="754" alt="Figure_15" src="https://github.com/user-attachments/assets/220b9ff0-ebda-46e3-8497-38dc38527b81" />
 
 
+Evaluation - Test set: 
+As we do not have labels with test, we compare them visaully
+
+Four samples were tested with different scenarios. 
+<img width="1536" height="754" alt="TestStack" src="https://github.com/user-attachments/assets/2eaa8298-5ef6-4a86-97b9-942517b7a6d0" />
+
+1. Simple examples are detected as expected. 2. Blur images are also detected which is better. 3. Night images detected all of the cars which are recognizable by human eye. 4. It seems the distant lights are missed. the lights may be coming from traffic lights or cars danger light. however it is considered as a miss.
+
 
 
 
