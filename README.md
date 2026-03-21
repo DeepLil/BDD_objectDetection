@@ -85,11 +85,10 @@ The result after training 10 epochs
 <img width="3000" height="2250" alt="confusion_matrix_normalized" src="https://github.com/user-attachments/assets/b0981ed3-f5c8-4cdb-be99-8ba2077ff628" />
 
 
+Comparing performance in day and night to check whether mAP can be improved by augmenting the failing half
 
-
-
-
-
+<img width="3000" height="2250" alt="confusion_matrix_normalized" src="https://github.com/user-attachments/assets/60ab1817-5cc5-4135-964c-456073273c8b" />
+  <img width="3000" height="2250" alt="confusion_matrix_normalized" src="https://github.com/user-attachments/assets/0852cf03-b887-4fe6-8594-8b1db1d03394" />
 
 
 
