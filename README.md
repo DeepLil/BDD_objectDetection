@@ -90,6 +90,18 @@ Comparing performance in day and night to check whether mAP can be improved by a
 <img width="1536" height="754" alt="Figure_15" src="https://github.com/user-attachments/assets/220b9ff0-ebda-46e3-8497-38dc38527b81" />
 
 
+
+Evaluation - Val Set
+
+<img width="1536" height="754" alt="val" src="https://github.com/user-attachments/assets/986a2669-f4c1-48c5-819d-e2b6e0c96ba4" />
+
+There is box offset as we have trained for only 10 epoch and box loss not converged. this will be gone if trained for little more epochs. But one interesting observation is boxes are hallucinated when there is heavy occlusion. The parts visible are trated as complete objects and getting detected multiple times. This is because we didn't let the model completely understand what occlusion is. This will be analyzed by validating the data with occluded and non occulded valid set
+
+
+
+
+
+
 Evaluation - Test set: 
 As we do not have labels with test, we compare them visaully
 
