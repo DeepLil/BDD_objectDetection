@@ -80,6 +80,13 @@ Though, the instances are huge in case of car class, lot of cars went in backgro
 
 Going back to dimension analysis, we have lot of cars in the datset which are extremely small. We can confirm this visually by the validation result. 
 
+The result after training 10 epochs
+
+<img width="3000" height="2250" alt="confusion_matrix_normalized" src="https://github.com/user-attachments/assets/b0981ed3-f5c8-4cdb-be99-8ba2077ff628" />
+
+
+
+
 
 
 
