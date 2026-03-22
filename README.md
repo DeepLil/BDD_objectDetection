@@ -127,6 +127,14 @@ Four samples were tested with different scenarios.
 
 1. Simple examples are detected as expected. 2. Blur images are also detected which is better. 3. Night images detected all of the cars which are recognizable by human eye. 4. It seems the distant lights are missed. the lights may be coming from traffic lights or cars danger light. however it is considered as a miss.
 
+# Things I would do if i had time and compute:
+
+1. Train till convergence
+2. Filter out rare classes (train, rider, motor)
+3. Inspect them visually. (Atleast train class and only filter useful samples. This exercise is required especially for this class as the occluded percentage is not available in this dataset and 90% occulded objects are very dangerous to be repeated in augmentation step and can lead to rreduction in other vehicle class  detection. For this very reason, train class is not chased while training and left as it is for now.
+4. Augment them proportionately.
+5. Re train. 
+
 
 
 
