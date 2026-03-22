@@ -13,11 +13,13 @@ Training data:
 
 <img width="1200" height="600" alt="bdd_distribution_t" src="https://github.com/user-attachments/assets/258a26e2-c302-4d7f-aba5-ff5331de91e8" />
 
+Long Tail distribution which has negligible amount of data in some classes especially for train class. 
+
 With Occlusion and truncated details
 
 <img width="4200" height="2400" alt="bdd_distribution_refined" src="https://github.com/user-attachments/assets/2303f332-9dcb-4a4c-a0d0-eb2df0f74c2d" />
 
-
+This confirms there are more than enough hard examples so that model learns to identify partially visible objects  
 Validation data:
 
 <img width="1200" height="600" alt="bdd_distribution_t" src="https://github.com/user-attachments/assets/621e372a-cbea-4c18-a60a-c92577d6e626" />
@@ -25,6 +27,8 @@ Validation data:
 With Occlusion and truncated details
 
 <img width="4200" height="2400" alt="bdd_distribution_refined_val" src="https://github.com/user-attachments/assets/7dbffeb4-cac0-4ba0-aaeb-7aea13ee2ca8" />
+
+The val split distribution is identical to train split distribution.
 
 
 # Spatial Distribution check
