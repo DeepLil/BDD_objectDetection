@@ -97,7 +97,7 @@ Though, the instances are huge in case of car class, lot of cars went in backgro
 
 Going back to dimension analysis, we have lot of cars in the datset which are extremely small. We can confirm this visually by the validation result. 
 
-The result after training 10 epochs
+The result after training 11 epochs
 
 <img width="3000" height="2250" alt="confusion_matrix_normalized" src="https://github.com/user-attachments/assets/b0981ed3-f5c8-4cdb-be99-8ba2077ff628" />
 
@@ -106,8 +106,14 @@ Comparing performance in day and night to check whether mAP can be improved by a
 
 <img width="1536" height="754" alt="Figure_15" src="https://github.com/user-attachments/assets/220b9ff0-ebda-46e3-8497-38dc38527b81" />
 
+# Quantitative Analysis 
+
+<img width="1536" height="754" alt="metrics" src="https://github.com/user-attachments/assets/c40519bf-29ce-47f7-a444-a007f2709940" />
+
+Training is done for only 11 epochs. So the metrics are monotonically decreasing/increasing for now. Ideally these shoud be converged if trained for enough epochs 
 
 
+# Qualitative analysis
 Evaluation - Val Set
 
 <img width="1536" height="754" alt="val" src="https://github.com/user-attachments/assets/986a2669-f4c1-48c5-819d-e2b6e0c96ba4" />
@@ -129,11 +135,19 @@ Four samples were tested with different scenarios.
 
 # Things I would do if i had time and compute:
 
-1. Train till convergence
-2. Filter out rare classes (train, rider, motor)
+1. Train till convergence - Increase overall mAP.
+2. Filter out rare classes (train, rider, motor) 
 3. Inspect them visually. (Atleast train class and only filter useful samples. This exercise is required especially for this class as the occluded percentage is not available in this dataset and 90% occulded objects are very dangerous to be repeated in augmentation step and can lead to rreduction in other vehicle class  detection. For this very reason, train class is not chased while training and left as it is for now.
 4. Augment them proportionately.
-5. Re train. 
+5. Re train.  - Increase AP for these classes and hence overall mAP.
+
+# Things I would do if i had more time and more compute:
+
+1. Train a yolov8s instead of nano. More depth hence more accuracy still in real time. 
+2. Compare the performance on small vs non-small(medium,large) just like I did for day vs night to understand are we losing because of small objects. If yes, consider training with native size 1280*720 instead of 640*640. This will give teh true size of the object to the model and do not make the small object smaller.  
+# Things I would do if i had more than enough time and compute:
+
+1. Add P2 head after confirming size is the issue
 
 
 
