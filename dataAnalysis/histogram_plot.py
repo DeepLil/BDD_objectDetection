@@ -14,8 +14,7 @@ def analyze_bdd_distribution(json_path):
     with open(json_path, 'r') as f:
         data = json.load(f)
 
-    # We use a nested dictionary to track the 4 specific states per category
-    # categories -> { 'normal': count, 'occ_only': count, 'tru_only': count, 'both': count }
+    
     stats = {}
 
     for entry in data:
@@ -51,7 +50,7 @@ def analyze_bdd_distribution(json_path):
     # Plotting
     plt.figure(figsize=(14, 8))
     
-    # Create the stacked bars
+    
     p1 = plt.bar(categories, normal, color='#2ecc71', label='Normal (Clear)')
     p2 = plt.bar(categories, occ_only, bottom=normal, color='#3498db', label='Occluded Only')
     p3 = plt.bar(categories, tru_only, bottom=normal + occ_only, color='#f1c40f', label='Truncated Only')
@@ -63,14 +62,13 @@ def analyze_bdd_distribution(json_path):
     plt.xticks(rotation=45, ha='right')
     plt.legend(title="Visibility Status", frameon=True, loc='upper right')
     
-    # Optional: Add a grid for readability
+    
     plt.grid(axis='y', linestyle='--', alpha=0.3)
     
-    # Aesthetic adjustment: Add text labels for high-level percentages on top of bars
+    
     for i, cat in enumerate(categories):
         total = normal[i] + occ_only[i] + tru_only[i] + both[i]
         occ_pct = ((occ_only[i] + both[i]) / total) * 100
-        # Display total count above bar
         plt.text(i, total + (max(normal) * 0.02), f'{total}', ha='center', fontsize=9, fontweight='bold')
 
     plt.tight_layout()
