@@ -1,0 +1,11 @@
+
+path: D:/Phani_Works/2025/Hailo/BDD  # Dataset root directory
+train: train/images  # Train images relative path
+val: val/images      # Val images relative path
+#test: test/images    # Uncomment and update if you have a test set
+
+# Classes
+nc: 10  # number of classes, ensure this matches your dataset
+names: ["person", "rider", "car", "truck",
+"bus", "train", "motor","bike",
+"traffic light", "traffic sign"]  # class names, ensure this matches your dataset
