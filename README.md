@@ -113,6 +113,7 @@ Comparing performance in day and night to check whether mAP can be improved by a
 
 <img width="1536" height="754" alt="Figure_15" src="https://github.com/user-attachments/assets/220b9ff0-ebda-46e3-8497-38dc38527b81" />
 
+There is no significant difference between the two so no need to increase night samples in training. Seems balanced enough
 # Quantitative Analysis 
 
 <img width="1536" height="754" alt="metrics" src="https://github.com/user-attachments/assets/c40519bf-29ce-47f7-a444-a007f2709940" />
