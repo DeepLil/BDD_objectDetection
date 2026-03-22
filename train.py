@@ -8,4 +8,4 @@ def train_yolo_model(data_yaml, model_name="yolov8n.pt", epochs=11):
 
     return results
 
-results = train_yolo_model("D:/Phani_Works/2025/Hailo/BDD/data.yaml", epochs=11)
+results = train_yolo_model("data.yaml", epochs=11)
