@@ -98,8 +98,7 @@ Fine tuning the model for the BDD dataset classes just for an epoch to see what 
 
 
 Though, the instances are huge in case of car class, lot of cars went in background and lot of background is hallucinated as cars. 
-
-Going back to dimension analysis, we have lot of cars in the datset which are extremely small. We can confirm this visually by the validation result. 
+Let us train a little more and check if there is any improvement
 
 The result after training 11 epochs
 
