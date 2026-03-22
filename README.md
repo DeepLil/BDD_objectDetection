@@ -88,7 +88,7 @@ All of the classes are spatially distributed at the center with tolerance. which
 The dataset has small through large objects for each class. There are some anamolies which is like truck has more height than width and some pedestrains has more width than height. But they are very minimal which are likely due to occlusion and hence ignored. 
 
 # Training
-yolov8n which is pretrained on coco dataset is used and finetuned for this dataset. Basically just changing the head. And trained for 11 epochs. Ultralytics API is used. Refer train.py
+yolov8n which is pretrained on coco dataset is used and finetuned for this dataset. Basically just changing the head. And trained for 11 epochs. Ultralytics API is used. Refer train.py and data.yaml
 
 # The first pass
 
@@ -135,10 +135,6 @@ Evaluation - Val Set
 <img width="1536" height="754" alt="val" src="https://github.com/user-attachments/assets/986a2669-f4c1-48c5-819d-e2b6e0c96ba4" />
 
 There is box offset as we have trained for only 10 epoch and box loss not converged. this will be gone if trained for little more epochs. But one interesting observation is boxes are hallucinated when there is heavy occlusion. The parts visible are trated as complete objects and getting detected multiple times. This is because we didn't let the model completely understand what occlusion is. This will be analyzed by validating the data with occluded and non occulded valid set
-
-
-
-
 
 
 Evaluation - Test set: 
