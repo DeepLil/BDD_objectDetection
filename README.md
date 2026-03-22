@@ -158,7 +158,8 @@ Four samples were tested with different scenarios.
 2. Compare the performance on small vs non-small(medium,large) just like I did for day vs night to understand are we losing because of small objects. If yes, consider training with native size 1280*720 instead of 640*640. This will give teh true size of the object to the model and do not make the small object smaller.  
 # Things I would do if i had more than enough time and compute:
 
-1. Add P2 head after confirming size is the issue
+1. Add P2 head after confirming size is the issue i.e model is failing only due to small objects. P2 head is the one which has resolution of 160*160 while traditionally only P3(80*80), P4(40*40), P5(20*20) are the outputs of YOLOv8. Which means P5 looks 32*32 pixels for every pixel while P2 sees 4*4 pixels for every pixel which helps in identifying much smaller objects without impacting the larger ones.
+
 
 
 
