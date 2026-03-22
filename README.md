@@ -120,7 +120,7 @@ The train class having zero AP (quite understandeable and expected as we have 0.
 
 <img width="2250" height="1500" alt="BoxPR_curve" src="https://github.com/user-attachments/assets/e3fc504e-2e34-4a71-8b59-8928f4f6e36a" />
 
-The AP difference in classes like car, person, traffic signs is significant. 
+The AP difference in classes like car, person, traffic signs, bus and truck are significant. (Dominant classes - more data)
 # Qualitative analysis
 Evaluation - Val Set
 
