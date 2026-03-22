@@ -1,7 +1,7 @@
 # BDD_objectDetection
 
 Data Analysis:
-1. Parse the labels from the json file into YOLO format (yolov8n pretrained on coc dataset is used) using convert_to_yolo.py script
+1. Parse the labels from the json file into YOLO format  using convert_to_yolo.py script
 2. Verify the labels by visualization using verify_conversion.py
 3. while verifying the number of lables vs corresponding images, there are differnces, so the labels without images or images without lables are removed using remove_orphaned_files.py 
 4. Observe the distribution of classes.
@@ -61,6 +61,8 @@ Repeat with every class.
 
 <img width="1000" height="600" alt="truck_heatmap" src="https://github.com/user-attachments/assets/c5a32306-28e9-47e5-be5a-baa339fd9a66" />
 
+
+All of the classes are spatially distributed at the center with tolerance. which is healthy.
 # Dimension check
 
 <img width="800" height="800" alt="bike_scatter" src="https://github.com/user-attachments/assets/44e92f94-8e18-4d1a-af5e-9eb6822e52a4" />
@@ -83,7 +85,7 @@ Repeat with every class.
 
 <img width="800" height="800" alt="truck_scatter" src="https://github.com/user-attachments/assets/659a3241-ad94-4cbd-925d-2ef347545f9e" />
 
-
+The dataset has small through large objects for each class. There are some anamolies which is like truck has more height than width and some pedestrains has more width than height. But they are very minimal and are being ignored for time being.
 
 
 # The first pass
