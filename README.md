@@ -85,8 +85,10 @@ All of the classes are spatially distributed at the center with tolerance. which
 
 <img width="800" height="800" alt="truck_scatter" src="https://github.com/user-attachments/assets/659a3241-ad94-4cbd-925d-2ef347545f9e" />
 
-The dataset has small through large objects for each class. There are some anamolies which is like truck has more height than width and some pedestrains has more width than height. But they are very minimal and are being ignored for time being.
+The dataset has small through large objects for each class. There are some anamolies which is like truck has more height than width and some pedestrains has more width than height. But they are very minimal which are likely due to occlusion and hence ignored. 
 
+# Training
+yolov8n which is pretrained on coco dataset is used and finetuned for this dataset. Basically just changing the head. And trained for 11 epochs. Ultralytics API is used. Refer train.py
 
 # The first pass
 
