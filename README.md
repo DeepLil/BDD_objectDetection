@@ -10,9 +10,13 @@ Data Analysis:
 # No of instances per class
 
 Training data:
-<img width="1200" height="600" alt="bdd_distribution" src="https://github.com/user-attachments/assets/447fdfcf-953a-426f-beec-72a23f6322bf" />
+
+<img width="1200" height="600" alt="bdd_distribution_t" src="https://github.com/user-attachments/assets/258a26e2-c302-4d7f-aba5-ff5331de91e8" />
+
 Validation data:
-<img width="1200" height="600" alt="bdd_distribution_val" src="https://github.com/user-attachments/assets/9ca4d65c-90fe-497a-a4a6-d3cfd2dc3f2f" />
+
+<img width="1200" height="600" alt="bdd_distribution_t" src="https://github.com/user-attachments/assets/621e372a-cbea-4c18-a60a-c92577d6e626" />
+
 
 # Spatial Distribution check
 
