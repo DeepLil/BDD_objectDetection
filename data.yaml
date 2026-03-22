@@ -1,5 +1,5 @@
 
-path: D:/Phani_Works/2025/Hailo/BDD  # Dataset root directory
+path: dataset  # Dataset root directory 
 train: train/images  # Train images relative path
 val: val/images      # Val images relative path
 #test: test/images    # Uncomment and update if you have a test set
