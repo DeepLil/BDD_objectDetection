@@ -112,7 +112,15 @@ Comparing performance in day and night to check whether mAP can be improved by a
 
 Training is done for only 11 epochs. So the metrics are monotonically decreasing/increasing for now. Ideally these shoud be converged if trained for enough epochs 
 
+Now, let us check the Individual AP
 
+<img width="2250" height="1500" alt="BoxPR_curve" src="https://github.com/user-attachments/assets/ccb1d2cc-82b3-4e76-b41e-3c5f9ef232c0" />
+
+The train class having zero AP (quite understandeable and expected as we have 0.02% of samples compared to highest samples (car). So this is pulling the mAP by 11%. So the mAP at 50% IoU would be 0.463 instead of 0.417. This is small but better compared to first epoch which is below (comparison is mentioned to prove that higher epoch would naturally increase mAP for dominant classes. 
+
+<img width="2250" height="1500" alt="BoxPR_curve" src="https://github.com/user-attachments/assets/e3fc504e-2e34-4a71-8b59-8928f4f6e36a" />
+
+The AP difference in classes like car, person, traffic signs is significant. 
 # Qualitative analysis
 Evaluation - Val Set
 
