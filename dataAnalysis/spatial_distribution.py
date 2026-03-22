@@ -38,16 +38,9 @@ def analyze_patterns(json_path, output_dir="analysis_results"):
             spatial_data[cat].append((xc, yc))
             dimension_data[cat].append((w_box, h_box))
 
-            # 2. Rule-based Anomaly Detection
-            aspect_ratio = w_box / (h_box + 1e-6)
-            # Pattern: Pedestrians should be vertical rectangles
-            if cat == 'pedestrian' and aspect_ratio > 1.2:
-                anomalies.append(f"Wide Pedestrian in {entry['name']}: ID {lbl['id']}")
-            # Pattern: Cars should be horizontal rectangles
-            if cat == 'car' and aspect_ratio < 0.5 and not lbl['attributes'].get('occluded'):
-                anomalies.append(f"Tall/Skinny Car in {entry['name']}: ID {lbl['id']}")
+        
 
-    # 3. Visualization: Heatmaps
+    # Heatmaps
     for cat in spatial_data:
         coords = np.array(spatial_data[cat])
         plt.figure(figsize=(10, 6))
@@ -58,7 +51,7 @@ def analyze_patterns(json_path, output_dir="analysis_results"):
         #plt.savefig(f"{output_dir}/{cat}_heatmap.png")
         plt.close()
 
-    # 4. Visualization: Size Scatter Plots
+    #  Scatter Plots
     for cat in dimension_data:
         dims = np.array(dimension_data[cat])
         plt.figure(figsize=(8, 8))
@@ -70,5 +63,5 @@ def analyze_patterns(json_path, output_dir="analysis_results"):
         #plt.savefig(f"{output_dir}/{cat}_scatter.png")
         plt.close()
 
-    return anomalies
+    
 
