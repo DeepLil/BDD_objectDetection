@@ -6,7 +6,6 @@ import os
 verify the labels produced by the conversion script by drawing the bounding boxes on the images.
 Input: image_dir: directory containing the images, label_dir: directory containing the YOLO format labels.
 Output: Displays a random image with the bounding boxes drawn on it.
-
 '''
 def verify_conversion(image_dir, label_dir):
     # Pick a random image
