@@ -165,6 +165,8 @@ Four samples were tested with different scenarios.
 
 
 
+# References
 
+1. SOD-YOLO: Enhancing YOLO-Based Detection of Small Objects in UAV Imagery (https://arxiv.org/html/2507.12727v1)
 
 
