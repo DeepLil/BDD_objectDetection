@@ -90,6 +90,8 @@ The dataset has small through large objects for each class. There are some anamo
 # Training
 yolov8n which is pretrained on coco dataset is used and finetuned for this dataset. Basically just changing the head. And trained for 11 epochs. Ultralytics API is used. Refer train.py and data.yaml
 
+Reason for choosing yolov8 family is because it is the sweetspot for accuracy and real time performance. Here i have used nano for the assignment but my choice would be v8 small. The reason is it is single shot, have few parameters comapared to peers which offers similar performance. 
+
 # The first pass
 
 Fine tuning the model for the BDD dataset classes just for an epoch to see what would be the performance. It is likely we get a very low maP because of the heavy penalization due to classes like train, rider , motor which is evident from the skewed dataset, we will check other things which we might have missed and justify the ones which are expected but not taken care of. 
