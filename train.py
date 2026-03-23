@@ -1,5 +1,5 @@
 from ultralytics import YOLO
-def train_yolo_model(data_yaml, model_name="yolov8n.pt", epochs=11):
+def train_yolo_model(data_yaml, model_name, epochs):
     # Load the model
     model = YOLO(model_name)
     
@@ -8,4 +8,4 @@ def train_yolo_model(data_yaml, model_name="yolov8n.pt", epochs=11):
 
     return results
 
-results = train_yolo_model("data.yaml", epochs=11)
+results = train_yolo_model("data.yaml", "best.pt", epochs=11)
