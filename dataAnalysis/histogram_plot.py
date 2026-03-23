@@ -13,7 +13,7 @@ class histogramPlotting:
     def __init__(self,json_path):
         self.json_path = json_path    
     
-    def analyze_bdd_distribution(self.json_path):
+    def analyze_bdd_distribution(self):
         #print(f"Loading {json_path}...")
         with open(self.json_path, 'r') as f:
             data = json.load(f)
@@ -76,6 +76,6 @@ class histogramPlotting:
             plt.text(i, total + (max(normal) * 0.02), f'{total}', ha='center', fontsize=9, fontweight='bold')
 
     plt.tight_layout()
-    plt.savefig("bdd_distribution_refined.png", dpi=300)
-    print("\nRefined chart saved as 'bdd_distribution_refined.png'")
+    #plt.savefig("bdd_distribution_refined.png", dpi=300)
+    #print("\nRefined chart saved as 'bdd_distribution_refined.png'")
 
