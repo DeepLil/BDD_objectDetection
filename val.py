@@ -8,4 +8,4 @@ def val_yolo_model(data_yaml, model_path):
 
     return results
 
-results = val_yolo_model("data.yaml")
+results = val_yolo_model("data.yaml", "best.pt")
