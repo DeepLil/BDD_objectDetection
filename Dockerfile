@@ -12,5 +12,5 @@ COPY . /app/dataAnalysis
 # Install any required packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Command to run the scripts (you can customize this as needed)
+# Command to run the scripts 
 #CMD ["python", "convert_to_yolo.py"]
