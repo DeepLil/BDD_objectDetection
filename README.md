@@ -162,7 +162,8 @@ Four samples were tested with different scenarios.
 # Things I would do if i had more than enough time and compute:
 
 1. Add P2 head after confirming size is the issue i.e model is failing only due to small objects. P2 head is the one which has resolution of 160*160 while traditionally only P3(80*80), P4(40*40), P5(20*20) are the outputs of YOLOv8. Which means P5 looks 32*32 pixels for every pixel while P2 sees 4*4 pixels for every pixel which helps in identifying much smaller objects without impacting the larger ones. This would reduce false negatives 
-2. Using a soft-NMS instead of normal NMS for post processing. This would not penalize the overlapping boxes compeltely but reduce the confidence scores. This would reduce false postives.
+2. Using a soft-NMS instead of normal NMS for post processing. This would not penalize the overlapping boxes compeltely but reduce the confidence scores. This would also reduce false negatives as we miss fewer obejcts.
+3. The focus is given to reducing false negatives or improving recall as we have seen there are no big hallucinations and whatever encountered will be reduced while training for more epochs. If the hallucination still persists, changing to focal loss from cross entropy loss would help. As the idea is identify hard negatives. Which would be similar to the traditional 3 sample loss function like triplet where postive and negative anchor is compared with every sample. This is achieved by changing cross entropy loss to focal loss in training. 
 
 
 
